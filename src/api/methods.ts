@@ -67,7 +67,7 @@ export interface MovieDetailsDto extends MovieDto {
 export function searchMovies(
   query: string,
   options?: Partial<SearchMovieOptions>
-) {
+): Promise<MovieListItemDto[]> {
   return client
     .get("/api/v1/movies/search", {
       params: {

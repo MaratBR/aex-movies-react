@@ -65,7 +65,7 @@ export default function SearchMoviesPage({ advanced }: SearchMoviesPageProps) {
     []
   );
 
-  const movies = useQuery<MovieDto[]>(
+  const movies = useQuery(
     "movies",
     () => {
       if (advanced) {

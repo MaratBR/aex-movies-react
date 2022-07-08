@@ -1,8 +1,8 @@
-import { MovieDto } from "../api/methods";
+import { MovieDto, MovieListItemDto } from "../api/methods";
 import { NavLink } from "react-router-dom";
 
 interface MovieCardProps {
-  movie: MovieDto;
+  movie: MovieListItemDto;
 }
 
 export default function MovieCard({ movie }: MovieCardProps) {

@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import logo from "./logo.svg";
 import ActorPage from "./pages/ActorPage";
 import MainLayout from "./pages/MainLayout";
 import MoviePage from "./pages/MoviePage";
