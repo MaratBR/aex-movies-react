@@ -1,26 +1,22 @@
-import classNames from "classnames";
 import { useEffect, useMemo, useState } from "react";
 import AsyncSelect from "react-select/async";
-import { useNavigate, useParams } from "react-router";
 import { NavLink, useSearchParams } from "react-router-dom";
-import {
-  ActorDto,
-  GenreDto,
-  MovieDto,
-  searchActors,
-  searchGenres,
-  searchMovies,
-  searchMoviesAdvanced,
-} from "../api/methods";
 import ErrorView from "../components/ErrorView";
 import MovieCard from "./MovieCard";
 import S from "./SearchMoviesPage.module.scss";
 import { useQuery } from "react-query";
-import Card from "../components/Card";
 import Button from "../components/Button";
 import { SearchIcon } from "@heroicons/react/outline";
 import PageContent from "../components/PageContent";
 import { PageTitle } from "../components/text";
+import {
+  ActorDto,
+  GenreDto,
+  searchActors,
+  searchGenres,
+  searchMovies,
+  searchMoviesAdvanced,
+} from "../api";
 
 const PLACEHOLDERS = [
   "romance",

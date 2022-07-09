@@ -9,3 +9,6 @@ FROM nginx:1.23.0 AS final
 COPY docker/nginx.conf /etc/nginx/nginx.conf
 COPY docker/nginx_server.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /src/dist /dist
+
+RUN cp /dist/index.html /index.html.tmpl
+COPY docker/init-index.sh /docker-entrypoint.d

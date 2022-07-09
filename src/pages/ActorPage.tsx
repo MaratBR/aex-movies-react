@@ -1,6 +1,5 @@
 import { useQuery } from "react-query";
 import { useParams } from "react-router";
-import { NavLink } from "react-router-dom";
 import { getActor } from "../api";
 import ErrorView from "../components/ErrorView";
 import Loading from "../components/Loading";
